@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  flex-wrap: wrap;
+}
+
+main section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main section:nth-child(3n + 2) {
+  margin-top: 10%;
+}
+
+main div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+main img {
+  width: 60%;
+  height: auto;
+}
+
+h1,
+.occupation {
+  font-family: "PT Serif", serif;
+}
+
+h2,
+.name,
+header p {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+.name {
+  font-weight: 600;
+}
+
+.occupation {
+  transform: rotate(90deg);
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  left: -45%;
+  top: -40%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+header p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9a9a9;
+  display: flex;
+  justify-content: center;
+}
+
+.author {
+  font-weight: 700;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+a:hover {
+  color: black;
+}
+
+@media (max-width: 991px) {
+  header {
+    flex-direction: column;
+  }
+
+  header section {
+    width: 100%;
+  }
+
+  main {
+    padding-left: 10px;
+  }
+
+  main section {
+    width: 50%;
+  }
+
+  main section:nth-child(2n + 1) {
+    margin-top: 0;
+  }
+
+  main section:nth-child(2n) {
+    margin-top: 10%;
+  }
+
+  .occupation {
+    font-size: 10px;
+    top: -30%;
+  }
+
+  .name,
+  header p {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
